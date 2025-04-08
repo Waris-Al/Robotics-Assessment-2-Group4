@@ -20,9 +20,9 @@ try:
         input_value = GPIO.input(10)
         if input_value:
             print("Intruder detected!")
-            cam.start_preview()
+            #cam.start_preview()
             cam.record_video(video_filename, duration=10)
-            cam.stop_preview()
+            #cam.stop_preview()
             cam.stop_recording()
             print(f"Video saved: {video_filename}")
             subject = "INTRUDER ALERT!!"
